@@ -66,14 +66,29 @@ nav.navbar.shrink {
   position: relative;
 }
 .header .logo span:first-child {
-  font-family: "Oswald";
+  font-family: "Roboto";
   font-weight: bold;
-  padding: 1rem;
+  padding: 0rem 0.4rem;
   width: 100px;
-  border: 5px solid #fff;
+  position: relative;
+  /*            border: 5px solid #fff;*/
+}
+.header .logo span:first-child::after {
+  content: "";
+  vertical-align: middle;
+  top: 0rem;
+  left: -0.25rem;
+  position: absolute;
+  width: 2rem;
+  height: 4rem;
+  border-right: 5px solid #e6f9af;
+  z-index: 50;
 }
 .header .logo span:last-child {
   color: #384e77;
+  color: #0d0630;
+  position: relative;
+  z-index: 100;
 }
 
 .portfolio {
