@@ -41,7 +41,69 @@ nav.navbar .navbar-nav .nav-item .nav-link {
   color: #384e77;
 }
 
+.portfolio h2 {
+  padding: 10rem;
+  padding-bottom: 2rem;
+}
+.portfolio hr {
+  padding-bottom: 10rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+}
+.cards .card .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+}
+
 .footer {
   background-color: #384e77;
   color: #fff;
+  padding: 5rem 0 1rem 0;
+  text-align: center;
+}
+.footer .links img {
+  width: 50px;
+}
+
+.about {
+  background-color: #8bbeb2;
+  padding: 15rem 0 15rem 0;
+}
+
+.contact {
+  text-align: center;
+  padding: 10rem 0 10rem 0;
+}
+.contact .form-control {
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 2px 0 0 #18314f;
+}
+.contact .form-control:active,
+.contact .form-control:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0 5px 0 0 #0d0630;
+}
+
+textarea {
+  height: 10rem;
+}
+
+.btn-primary {
+  background-color: #0d0630;
+  font-weight: bold;
+  border-color: #384e77;
+}
+
+.btn-primary:hover {
+  background-color: #18314f;
 }/*# sourceMappingURL=style.css.map */

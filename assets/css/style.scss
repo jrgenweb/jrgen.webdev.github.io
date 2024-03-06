@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200..700&display=swap");
+$color1: #e6f9af;
+$color2: #8bbeb2;
+$color3: #384e77;
+$color4: #18314f;
+$color5: #0d0630;
+
 nav.navbar {
     font-family: "Oswald";
     text-transform: uppercase;
@@ -33,6 +39,7 @@ nav.navbar {
     background-attachment: local, scroll;
     background-size: auto, cover;
     margin-top: 72px;
+
     h1 {
         font-size: 8rem;
         color: #0d0630;
@@ -53,7 +60,73 @@ nav.navbar {
     }
 }
 
+.portfolio {
+    h2 {
+        padding: 10rem;
+        padding-bottom: 2rem;
+    }
+    hr {
+        padding-bottom: 10rem;
+    }
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    .card {
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: none;
+            border: none;
+        }
+    }
+}
 .footer {
     background-color: #384e77;
     color: #fff;
+    padding: 5rem 0 1rem 0;
+    text-align: center;
+
+    .links {
+        img {
+            width: 50px;
+        }
+    }
+}
+.about {
+    background-color: #8bbeb2;
+    padding: 15rem 0 15rem 0;
+}
+.contact {
+    text-align: center;
+    padding: 10rem 0 10rem 0;
+    .form-control {
+        border: none;
+        border-radius: 0;
+        box-shadow: 0 2px 0 0 $color4;
+    }
+    .form-control:active,
+    .form-control:focus {
+        border: none;
+        outline: none;
+        box-shadow: 0 5px 0 0 $color5;
+    }
+}
+textarea {
+    height: 10rem;
+}
+.form-floating {
+    label {
+    }
+}
+.btn-primary {
+    background-color: $color5;
+    font-weight: bold;
+    border-color: $color3;
+}
+.btn-primary:hover {
+    background-color: $color4;
 }
