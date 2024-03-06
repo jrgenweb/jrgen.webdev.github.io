@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200..700&display=swap");
+nav.navbar {
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #384e77 !important;
+  padding: 1rem 0 1rem 0;
+}
+nav.navbar .navbar-brand {
+  color: #fff;
+  letter-spacing: 0.3rem;
+}
+nav.navbar .navbar-nav .nav-item .nav-link {
+  color: #fff;
+}
+.header {
+  background-color: #8bbeb2;
+  padding: 5rem 0 5rem 0;
+  text-align: center;
+  background: linear-gradient(rgba(139, 190, 178, 0.6), rgba(139, 190, 178, 0.6)), url("../img/bg.jpg") bottom;
+  background-attachment: local, scroll;
+  background-size: auto, cover;
+  margin-top: 72px;
+}
+.header h1 {
+  font-size: 8rem;
+  color: #0d0630;
+}
+.header .logo {
+  font-size: 3rem;
+  position: relative;
+}
+.header .logo span:first-child {
+  font-family: "Oswald";
+  font-weight: bold;
+  padding: 1rem;
+  width: 100px;
+  border: 5px solid #fff;
+}
+.header .logo span:last-child {
+  color: #384e77;
+}
+
+.footer {
+  background-color: #384e77;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
