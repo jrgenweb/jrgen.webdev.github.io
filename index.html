@@ -2,9 +2,12 @@
 <html lang="en">
 
 <head>
+    <!-- just test-->
+    <meta name="view-transition" content="same-origin">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Németh László - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -14,11 +17,13 @@
 
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <div class="container">
+
             <a class="navbar-brand" href="#">jrgenweb</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -33,6 +38,8 @@
 
                 </ul>
             </div>
+
+
         </div>
     </nav>
 
@@ -51,7 +58,9 @@
 
     </header>
     <div class="page-section portfolio" id="portfolio">
+
         <div class="container mt-5">
+            <h4 class="text-danger text-center...">In Development</h4>
             <h2 class="text-center text-uppercase">Portfolio</h2>
             <hr>
 
@@ -184,7 +193,7 @@
         <div class="container mt-5">
 
             <div class="row">
-                <div class="col">
+                <div class="col  text">
                     <h2 class="text-center align-middle">Hi everyone!</h2>
                     <p class=" align-middle">
                         <b>Laszlo Nemeth</b> here, a passionate <b>web developer</b>. As a beginner, I am eager to learn
@@ -203,9 +212,9 @@
                 <div class="col">
                     <img src="assets/img/image.png" alt="" class="img-fluid">
                 </div>
-                <div class="col">
-                    <h3 class="">My areas of expertise:</h3>
-                    <p>
+                <div class="col text">
+                    <h2 class="">My areas of expertise:</h2>
+                    <p class="">
                         <b>HTML5 and CSS3:</b> I build sophisticated websites using the latest HTML5 and CSS3 standards,
                         with a
                         strong
@@ -238,8 +247,9 @@
     <div class="page-section contact mt-5 " id="contact">
 
         <div class="container">
-            <h2 class="text-uppercase">Contact Me</h2>
-            <p>
+            <h2 class="text-uppercase mb-5">Contact Me</h2>
+            <hr class="mt-5 mb-5">
+            <p class="w-50 m-auto">
                 <b>
                     If you are looking for a reliable and enthusiastic web developer to join your team, feel
                     free to
@@ -250,20 +260,19 @@
                 <br>
                 </b>Laszlo Nemeth<b>
             </p>
-            <hr>
+
             <div class="form col-8 m-auto">
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email address</label>
+                <div class="form-floating mb-5">
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    <label for="email">Email address</label>
                 </div>
-                <div class="form-floating mb-3">
+                <div class="form-floating mb-5">
                     <input type="text" class="form-control" id="fullname" placeholder="Fullname">
                     <label for="fullname">Fullname</label>
                 </div>
                 <div class="form-floating mb-5">
-                    <textarea class="form-control" rows="10" cols="20" placeholder="Leave a comment here"
-                        id="floatingTextarea"></textarea>
-                    <label for="floatingTextarea">Message</label>
+                    <textarea class="form-control" rows="10" placeholder="Message" id="messageTextArea"></textarea>
+                    <label for="messageTextArea">Message</label>
                 </div>
                 <div class="col">
                     <button class="btn btn-lg btn-primary btn-large">SEND</button>
@@ -276,35 +285,37 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    Location
-                    Hungary
+                    <h3>
+                        Location
+                        Hungary
+                    </h3>
                 </div>
                 <div class="col">
-                    About on web
-
+                    <h3>
+                        About on web
+                    </h3>
                     <div class="links">
-                        <a href="">
-                            <img src="assets/img/facebook2.png" alt="">
-                        </a>
+                        <a href="#"><img src="assets/img/facebook2.png" alt=""></a>
 
-                        <a href="">
-                            <img src="assets/img/twitter.png" alt="">
-                        </a>
+                        <a href="#">
+                            <img src="assets/img/twitter.png" alt=""></a>
 
-                        <a href="">
-                            <img src="assets/img/github.png" alt="">
-                        </a>
+                        <a href="https://github.com/jrgenweb" target="_blank"><img src="assets/img/github.png"
+                                alt=""></a>
 
-                        <a href="">
-                            <img src="assets/img/linkedin.png" alt="">
-                        </a>
+                        <a href="#"><img src="assets/img/linkedin.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col">
-                    About me
+                    <h3>
+                        About me
+                    </h3>
+                    <p>
+                        "We live in the Matrix"
+                    </p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mt-5">
                 <div class="col">
                     jrgenweb.github.io&copy;2024
                 </div>
@@ -318,6 +329,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>

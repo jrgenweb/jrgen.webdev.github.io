@@ -1,18 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 $color1: #e6f9af;
 $color2: #8bbeb2;
 $color3: #384e77;
 $color4: #18314f;
 $color5: #0d0630;
-
+html {
+    font-family: "Roboto";
+}
 nav.navbar {
     font-family: "Oswald";
     text-transform: uppercase;
 
     font-weight: bold;
     background-color: #384e77 !important ;
-    padding: 1rem 0 1rem 0;
-
+    padding: 1.5rem 0 1.5rem 0;
+    transition: all 0.2s ease-in-out;
     .navbar-brand {
         color: #fff;
         letter-spacing: 0.3rem;
@@ -21,11 +24,37 @@ nav.navbar {
         .nav-item {
             .nav-link {
                 color: #fff;
+                transition: all 0.3s;
+                margin-left: 0.5rem;
+                padding: 0.5rem 1rem 0.5rem 1rem;
+            }
+            .nav-link.active,
+            .nav-link:active {
+                /*ez csak béta*/
+                view-transition-name: activeNavTab;
+                /**/
+                transition: all 0.3s;
+                background-color: $color1;
+                color: $color5;
+
+                border-radius: 5px;
+            }
+            /*nem megy:/*/
+            ::view-transition-group(activeNavTab) {
+                animation-duration: 1.5s;
             }
         }
     }
     .navbar-collapse {
+        justify-content: flex-end;
     }
+    .container {
+    }
+}
+
+nav.navbar.shrink {
+    padding: 1rem 0 1rem 0;
+    transition: all 0.2s ease-in-out;
 }
 
 .header {
@@ -33,7 +62,7 @@ nav.navbar {
     padding: 5rem 0 5rem 0;
     text-align: center;
     background:
-        linear-gradient(#8bbeb299, #8bbeb299),
+        linear-gradient(#8bbeb2cc, #8bbeb2cc),
         url("../img/bg.jpg") bottom;
 
     background-attachment: local, scroll;
@@ -61,9 +90,12 @@ nav.navbar {
 }
 
 .portfolio {
+    margin-bottom: 10rem;
     h2 {
         padding: 10rem;
         padding-bottom: 2rem;
+        font-weight: bold;
+        color: $color5;
     }
     hr {
         padding-bottom: 10rem;
@@ -89,20 +121,40 @@ nav.navbar {
     color: #fff;
     padding: 5rem 0 1rem 0;
     text-align: center;
-
+    h3 {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
     .links {
         img {
             width: 50px;
+            margin: 1rem;
         }
     }
 }
 .about {
     background-color: #8bbeb2;
     padding: 15rem 0 15rem 0;
+    .text {
+        h2 {
+            margin-bottom: 2rem;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+            width: 80%;
+            text-align: justify;
+        }
+    }
 }
 .contact {
     text-align: center;
     padding: 10rem 0 10rem 0;
+    h2 {
+        font-weight: bold;
+    }
     .form-control {
         border: none;
         border-radius: 0;
@@ -115,11 +167,12 @@ nav.navbar {
         box-shadow: 0 5px 0 0 $color5;
     }
 }
-textarea {
-    height: 10rem;
-}
+
 .form-floating {
     label {
+    }
+    textarea.form-control {
+        height: auto;
     }
 }
 .btn-primary {
@@ -129,4 +182,20 @@ textarea {
 }
 .btn-primary:hover {
     background-color: $color4;
+}
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        align-items: center;
+        height: calc(100vh - 72px);
+        h1 {
+            font-size: 6rem;
+        }
+        .logo {
+            font-size: 2.4rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+        }
+    }
 }
