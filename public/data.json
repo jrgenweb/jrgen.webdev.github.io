@@ -1,0 +1,109 @@
+[
+    {
+        "title": "Norbert Szerzo Landing page",
+        "img_url": "szerzonorbert.webp",
+        "description": "description",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "SCSS"
+        ],
+        "urls": {
+            "live": "https://jrgenweb.github.io/szerzonorbert/",
+            "code": "https://github.com/jrgenweb/szerzonorbert"
+        },
+        "category": "Other"
+    },
+    {
+        "title": "Hiking concept",
+        "img_url": "webtemplate_hiking_concept.webp",
+        "description": "description",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "SCSS"
+        ],
+        "urls": {
+            "live": "https://jrgenweb.github.io/webtemplate_hiking_concept/",
+            "code": "https://github.com/jrgenweb/webtemplate_hiking_concept"
+        },
+        "category": "Other"
+    },
+    {
+        "title": "Result summary component",
+        "img_url": "https://jrgenweb.github.io/assets/img/projects/frontend_mentor/result-summary-component.webp",
+        "description": "description",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "SCSS"
+        ],
+        "urls": {
+            "live": "https://jrgenweb.github.io/results-summary-component-main/",
+            "code": "https://github.com/jrgenweb/results-summary-component-main"
+        },
+        "category": "FEM"
+    },
+    {
+        "title": "Recipe page main",
+        "img_url": "https://jrgenweb.github.io/assets/img/projects/frontend_mentor/recipe-page-main.webp",
+        "description": "description",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "SCSS"
+        ],
+        "urls": {
+            "live": "https://jrgenweb.github.io/recipe-page-main/",
+            "code": "https://github.com/jrgenweb/recipe-page-main/"
+        },
+        "category": "FEM"
+    },
+    {
+        "title": "Blog preview card",
+        "img_url": "https://jrgenweb.github.io/assets/img/projects/frontend_mentor/blog-preview-card.webp",
+        "description": "description",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "SCSS"
+        ],
+        "urls": {
+            "live": "https://jrgenweb.github.io/blog-preview-card-main/",
+            "code": "https://github.com/jrgenweb/blog-preview-card-main"
+        },
+        "category": "FEM"
+    },
+    {
+        "title": "Time tracking dashboard",
+        "img_url": "https://jrgenweb.github.io/time-tracking-dashboard-main/screenshot.png",
+        "description": "description",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "SCSS",
+            "JS"
+        ],
+        "urls": {
+            "live": "https://jrgenweb.github.io/time-tracking-dashboard-main",
+            "code": "https://github.com/jrgenweb/time-tracking-dashboard-main"
+        },
+        "category": "FEM"
+    },
+    {
+        "title": "Newsletter sign-up form",
+        "img_url": "https://jrgenweb.github.io/newsletter-sign-up-with-success-message-main/screenshot.png",
+        "description": "description",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "SCSS",
+            "JS"
+        ],
+        "urls": {
+            "live": "https://jrgenweb.github.io/newsletter-sign-up-with-success-message-main/",
+            "code": "https://github.com/jrgenweb/newsletter-sign-up-with-success-message-main/"
+        },
+        "category": "FEM"
+    }
+]

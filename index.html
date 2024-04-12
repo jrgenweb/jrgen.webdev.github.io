@@ -7,317 +7,260 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laszlo Nemeth - Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="dist/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="dist/js/scripts.js" defer></script>
 </head>
 
 <body>
+    <main>
+        <nav>
+            <div class="wrapper">
+                <a href="#" class="logo text-gradient">
+                    <div>{023}</div>
+                    <div>jrgenweb</div>
+                </a>
+                <div class="flex">
+                    <ul class="nav nav--top">
+                        <li class="nav__item"><a href="#">Home</a></li>
+                        <li class="nav__item"><a href="#about">About</a></li>
+                        <li class="nav__item"><a href="#tech-stack">Tech Stack</a></li>
+                        <li class="nav__item"><a href="#projects">Projects</a></li>
+                        <li class="nav__item"><a href="#contact">Contact</a></li>
+                    </ul>
+                    <ul class="nav nav--social">
+                        <li class="nav__item"><a href="https://github.com/jrgenweb" target="_blank"><span
+                                    class="visually-hidden">Github</span>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15 0C6.7125 0 0 6.7125 0 15C0 21.6375 4.29375 27.2437 10.2563 29.2313C11.0063 29.3625 11.2875 28.9125 11.2875 28.5188C11.2875 28.1625 11.2688 26.9813 11.2688 25.725C7.5 26.4188 6.525 24.8062 6.225 23.9625C6.05625 23.5312 5.325 22.2 4.6875 21.8438C4.1625 21.5625 3.4125 20.8687 4.66875 20.85C5.85 20.8313 6.69375 21.9375 6.975 22.3875C8.325 24.6562 10.4812 24.0187 11.3438 23.625C11.475 22.65 11.8688 21.9937 12.3 21.6187C8.9625 21.2437 5.475 19.95 5.475 14.2125C5.475 12.5813 6.05625 11.2313 7.0125 10.1813C6.8625 9.80625 6.3375 8.26875 7.1625 6.20625C7.1625 6.20625 8.41875 5.8125 11.2875 7.74375C12.4875 7.40625 13.7625 7.2375 15.0375 7.2375C16.3125 7.2375 17.5875 7.40625 18.7875 7.74375C21.6562 5.79375 22.9125 6.20625 22.9125 6.20625C23.7375 8.26875 23.2125 9.80625 23.0625 10.1813C24.0188 11.2313 24.6 12.5625 24.6 14.2125C24.6 19.9688 21.0938 21.2437 17.7563 21.6187C18.3 22.0875 18.7688 22.9875 18.7688 24.3937C18.7688 26.4 18.75 28.0125 18.75 28.5188C18.75 28.9125 19.0312 29.3813 19.7812 29.2313C22.759 28.2259 25.3465 26.3121 27.1796 23.7592C29.0127 21.2063 29.9991 18.1429 30 15C30 6.7125 23.2875 0 15 0Z"
+                                        fill="#666666" />
+                                </svg>
+                            </a></li>
+                        <li class="nav__item"><a href="https://twitter.com/jrgen_webdev" target="_blank"><span
+                                    class="visually-hidden">Twitter - X</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="30px" height="30px" viewBox="0 0 30 30" version="1.1">
 
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <div class="container">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M 13.398438 0.109375 C 8.128906 0.660156 3.421875 4.128906 1.28125 9.039062 C -0.101562 12.210938 -0.328125 15.859375 0.648438 19.21875 C 1.859375 23.410156 4.988281 26.949219 9.039062 28.71875 C 12.210938 30.101562 15.859375 30.328125 19.21875 29.351562 C 24.25 27.898438 28.210938 23.769531 29.511719 18.640625 C 31.539062 10.601562 26.558594 2.378906 18.5 0.460938 C 16.730469 0.0390625 15.171875 -0.0703125 13.398438 0.109375 Z M 13.601562 9.398438 C 14.878906 11.101562 15.960938 12.5 16 12.5 C 16.039062 12.5 17.371094 11.101562 18.941406 9.398438 L 21.808594 6.300781 L 23.441406 6.300781 L 23.089844 6.671875 C 22.890625 6.878906 21.589844 8.289062 20.199219 9.800781 C 18.808594 11.308594 17.449219 12.78125 17.179688 13.050781 L 16.699219 13.558594 L 20.449219 18.550781 C 22.511719 21.300781 24.199219 23.578125 24.199219 23.621094 C 24.199219 23.671875 22.96875 23.699219 21.480469 23.699219 L 18.75 23.691406 L 16.210938 20.289062 C 14.460938 17.941406 13.640625 16.929688 13.558594 16.988281 C 13.5 17.039062 12.078125 18.570312 10.398438 20.390625 L 7.351562 23.699219 L 6.578125 23.699219 C 6.148438 23.699219 5.800781 23.679688 5.800781 23.648438 C 5.800781 23.621094 7.390625 21.878906 9.328125 19.789062 C 11.261719 17.699219 12.859375 15.949219 12.878906 15.921875 C 12.890625 15.878906 11.300781 13.710938 9.351562 11.101562 C 7.398438 8.5 5.800781 6.351562 5.800781 6.328125 C 5.800781 6.308594 7.03125 6.300781 8.539062 6.300781 L 11.28125 6.300781 Z M 13.601562 9.398438 "
+                                        fill="#666" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M 8.269531 7.640625 C 8.308594 7.710938 10.828125 11.089844 13.851562 15.128906 L 19.351562 22.488281 L 20.578125 22.5 C 21.339844 22.5 21.800781 22.460938 21.78125 22.398438 C 21.769531 22.351562 19.261719 18.96875 16.21875 14.898438 L 10.679688 7.5 L 9.441406 7.5 C 8.410156 7.5 8.199219 7.519531 8.269531 7.640625 Z M 8.269531 7.640625 "
+                                        fill="#666" />
 
-            <a class="navbar-brand" href="#">jrgenweb</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                                </svg>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
 
+                            </a></li>
+                        <li class="nav__item"><a href="https://www.linkedin.com/in/jrgenweb/" target="_blank"><span
+                                    class="visually-hidden">LinkedIn</span><svg width="30" height="30"
+                                    viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8_50)">
+                                        <path
+                                            d="M15 0.599976C7.04701 0.599976 0.600006 7.04698 0.600006 15C0.600006 22.953 7.04701 29.4 15 29.4C22.953 29.4 29.4 22.953 29.4 15C29.4 7.04698 22.953 0.599976 15 0.599976ZM11.475 20.9685H8.55901V11.5845H11.475V20.9685ZM9.99901 10.4325C9.07801 10.4325 8.48251 9.77997 8.48251 8.97297C8.48251 8.14948 9.09601 7.51648 10.0365 7.51648C10.977 7.51648 11.553 8.14948 11.571 8.97297C11.571 9.77997 10.977 10.4325 9.99901 10.4325ZM22.125 20.9685H19.209V15.768C19.209 14.5575 18.786 13.7355 17.7315 13.7355C16.926 13.7355 16.4475 14.292 16.236 14.8275C16.158 15.018 16.1385 15.288 16.1385 15.5565V20.967H13.221V14.577C13.221 13.4055 13.1835 12.426 13.1445 11.583H15.678L15.8115 12.8865H15.87C16.254 12.2745 17.1945 11.3715 18.768 11.3715C20.6865 11.3715 22.125 12.657 22.125 15.42V20.9685Z"
+                                            fill="#666666" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_50">
+                                            <rect width="30" height="30" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <a href="#">
+                <!-- <span class="visually-hidden">Navbar Toggle</span> -->
+                <div class="nav-toggle">
+                    <div class="nav-toggle__line"></div>
+                    <div class="nav-toggle__line"></div>
+                    <div class="nav-toggle__line"></div>
+
+                </div>
+            </a>
+        </nav>
+        <header class="header">
+            <div class="header__content">
+                <h1>Hi👋,<br> My name is<br> <span class="text-gradient">Laszlo Nemeth</span><br>I build things for web
+                </h1>
+            </div>
+            <div class="header__image">
+                <div class="image__bg">
+                    <img src="dist/img/profile.webp" alt="Profile">
+                </div>
+            </div>
+        </header>
+        <section id="tech-stack" data-aos="fade-up">
+            <h2>My Tech Stack</h2>
+            <p>Technologies I am currently learning</p>
+
+            <div class="tech-stack__icons">
+                <div class="tech-stack__icon">
+                    <img src="dist/img/html5.svg" alt="HTML5 icon">
+                </div>
+                <div class="tech-stack__icon">
+                    <img src="dist/img/css3.svg" alt="CSS3 icon">
+                </div>
+                <div class="tech-stack__icon">
+                    <img src="dist/img/js.svg" alt="JavaScript icon">
+                </div>
+                <div class="tech-stack__icon">
+                    <img src="dist/img/vuejs.svg" alt="VueJS icon">
+                </div>
+                <div class="tech-stack__icon">
+                    <img src="dist/img/bootstrap.svg" alt="Bootstrap icon">
+                </div>
+                <div class="tech-stack__icon">
+                    <img src="dist/img/sass.svg" alt="Sass icon">
+                </div>
+                <div class="tech-stack__icon">
+                    <img src="dist/img/git.svg" alt="Git icon">
+                </div>
+                <div class="tech-stack__icon">
+                    <img src="dist/img/vscode.svg" alt="Visual Studio Code icon">
+                </div>
+                <div class="tech-stack__icon">
+                    <img src="dist/img/github_logo.svg" alt="Github icon">
+                </div>
+
+            </div>
+        </section>
+        <section id="projects" data-aos="fade-up">
+            <h2>Projects</h2>
+            <p>Things I've built so far</p>
+
+            <div class="projects__content">
+
+            </div>
+        </section>
+        <section id="about" class="about" data-aos="fade-up">
+            <h2>About Me</h2>
+            <p>I'm fascinated by the magic of web interfaces and I'm passionately learning frontend web development. My
+                goal is to create stunning and user-friendly websites that deliver an enjoyable experience.
+            </p>
+            <p>
+                I'm currently self-taught, but I'm constantly expanding my knowledge and committed to excellence. I'm
+                open to challenges and teamwork, and I'm eager to work on professional projects in the future.</p>
+            <h2>Work Experience</h2>
+            <p>I'm still studying, so I don't have any professional experience yet. However, I am committed to learning
+                and developing, and I am confident that I will gain the experience necessary to achieve my goals.</p>
+        </section>
+        <section id="contact" class="contact" data-aos="fade-up">
+
+            <h2>For any questions please mail us:</h2>
+            <p class="text-gradient">jrgenweb@gmail.com</p>
+
+            <p>Or Message Me:</p>
+
+            <div class="form">
+                <form action="mailto:jrgenweb@gmail.com">
+
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="example@mail.com">
+                    </div>
+                    <div class="form-control">
+                        <label for="subject">Subject</label>
+                        <input type="subject" name="subject" id="subject" placeholder="Subject">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+
+            <div class="footer__top">
+                <a href="#" class="logo">
+                    <div>{023}</div>
+                    <div>jrgenweb</div>
+                </a>
+                <div class="contact">
+                    <a href="tel:+36 70 279 0611">+36 70 279 0611</a>
+                    <a href="mailto:jrgenweb@gmail.com">jrgenweb@gmail.com</a>
+                    <ul class="nav nav--social">
+                        <li class="nav__item"><a href="https://github.com/jrgenweb" target="_blank"><span
+                                    class="visually-hidden">Github</span>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15 0C6.7125 0 0 6.7125 0 15C0 21.6375 4.29375 27.2437 10.2563 29.2313C11.0063 29.3625 11.2875 28.9125 11.2875 28.5188C11.2875 28.1625 11.2688 26.9813 11.2688 25.725C7.5 26.4188 6.525 24.8062 6.225 23.9625C6.05625 23.5312 5.325 22.2 4.6875 21.8438C4.1625 21.5625 3.4125 20.8687 4.66875 20.85C5.85 20.8313 6.69375 21.9375 6.975 22.3875C8.325 24.6562 10.4812 24.0187 11.3438 23.625C11.475 22.65 11.8688 21.9937 12.3 21.6187C8.9625 21.2437 5.475 19.95 5.475 14.2125C5.475 12.5813 6.05625 11.2313 7.0125 10.1813C6.8625 9.80625 6.3375 8.26875 7.1625 6.20625C7.1625 6.20625 8.41875 5.8125 11.2875 7.74375C12.4875 7.40625 13.7625 7.2375 15.0375 7.2375C16.3125 7.2375 17.5875 7.40625 18.7875 7.74375C21.6562 5.79375 22.9125 6.20625 22.9125 6.20625C23.7375 8.26875 23.2125 9.80625 23.0625 10.1813C24.0188 11.2313 24.6 12.5625 24.6 14.2125C24.6 19.9688 21.0938 21.2437 17.7563 21.6187C18.3 22.0875 18.7688 22.9875 18.7688 24.3937C18.7688 26.4 18.75 28.0125 18.75 28.5188C18.75 28.9125 19.0312 29.3813 19.7812 29.2313C22.759 28.2259 25.3465 26.3121 27.1796 23.7592C29.0127 21.2063 29.9991 18.1429 30 15C30 6.7125 23.2875 0 15 0Z"
+                                        fill="#666666" />
+                                </svg>
+                            </a></li>
+                        <li class="nav__item"><a href="https://twitter.com/jrgen_webdev" target="_blank"><span
+                                    class="visually-hidden">Twitter - X</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="30px" height="30px" viewBox="0 0 30 30" version="1.1">
+
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M 13.398438 0.109375 C 8.128906 0.660156 3.421875 4.128906 1.28125 9.039062 C -0.101562 12.210938 -0.328125 15.859375 0.648438 19.21875 C 1.859375 23.410156 4.988281 26.949219 9.039062 28.71875 C 12.210938 30.101562 15.859375 30.328125 19.21875 29.351562 C 24.25 27.898438 28.210938 23.769531 29.511719 18.640625 C 31.539062 10.601562 26.558594 2.378906 18.5 0.460938 C 16.730469 0.0390625 15.171875 -0.0703125 13.398438 0.109375 Z M 13.601562 9.398438 C 14.878906 11.101562 15.960938 12.5 16 12.5 C 16.039062 12.5 17.371094 11.101562 18.941406 9.398438 L 21.808594 6.300781 L 23.441406 6.300781 L 23.089844 6.671875 C 22.890625 6.878906 21.589844 8.289062 20.199219 9.800781 C 18.808594 11.308594 17.449219 12.78125 17.179688 13.050781 L 16.699219 13.558594 L 20.449219 18.550781 C 22.511719 21.300781 24.199219 23.578125 24.199219 23.621094 C 24.199219 23.671875 22.96875 23.699219 21.480469 23.699219 L 18.75 23.691406 L 16.210938 20.289062 C 14.460938 17.941406 13.640625 16.929688 13.558594 16.988281 C 13.5 17.039062 12.078125 18.570312 10.398438 20.390625 L 7.351562 23.699219 L 6.578125 23.699219 C 6.148438 23.699219 5.800781 23.679688 5.800781 23.648438 C 5.800781 23.621094 7.390625 21.878906 9.328125 19.789062 C 11.261719 17.699219 12.859375 15.949219 12.878906 15.921875 C 12.890625 15.878906 11.300781 13.710938 9.351562 11.101562 C 7.398438 8.5 5.800781 6.351562 5.800781 6.328125 C 5.800781 6.308594 7.03125 6.300781 8.539062 6.300781 L 11.28125 6.300781 Z M 13.601562 9.398438 "
+                                        fill="#666" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M 8.269531 7.640625 C 8.308594 7.710938 10.828125 11.089844 13.851562 15.128906 L 19.351562 22.488281 L 20.578125 22.5 C 21.339844 22.5 21.800781 22.460938 21.78125 22.398438 C 21.769531 22.351562 19.261719 18.96875 16.21875 14.898438 L 10.679688 7.5 L 9.441406 7.5 C 8.410156 7.5 8.199219 7.519531 8.269531 7.640625 Z M 8.269531 7.640625 "
+                                        fill="#666" />
+
+                                </svg>
+
+
+                            </a></li>
+                        <li class="nav__item"><a href="https://www.linkedin.com/in/jrgenweb/" target="_blank"><span
+                                    class="visually-hidden">LinkedIn</span><svg width="30" height="30"
+                                    viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8_50)">
+                                        <path
+                                            d="M15 0.599976C7.04701 0.599976 0.600006 7.04698 0.600006 15C0.600006 22.953 7.04701 29.4 15 29.4C22.953 29.4 29.4 22.953 29.4 15C29.4 7.04698 22.953 0.599976 15 0.599976ZM11.475 20.9685H8.55901V11.5845H11.475V20.9685ZM9.99901 10.4325C9.07801 10.4325 8.48251 9.77997 8.48251 8.97297C8.48251 8.14948 9.09601 7.51648 10.0365 7.51648C10.977 7.51648 11.553 8.14948 11.571 8.97297C11.571 9.77997 10.977 10.4325 9.99901 10.4325ZM22.125 20.9685H19.209V15.768C19.209 14.5575 18.786 13.7355 17.7315 13.7355C16.926 13.7355 16.4475 14.292 16.236 14.8275C16.158 15.018 16.1385 15.288 16.1385 15.5565V20.967H13.221V14.577C13.221 13.4055 13.1835 12.426 13.1445 11.583H15.678L15.8115 12.8865H15.87C16.254 12.2745 17.1945 11.3715 18.768 11.3715C20.6865 11.3715 22.125 12.657 22.125 15.42V20.9685Z"
+                                            fill="#666666" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_50">
+                                            <rect width="30" height="30" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer__bottom">
+                <ul class="nav nav--bottom">
+                    <li class="nav__item"><a href="#">Home</a></li>
+                    <li class="nav__item"><a href="#about">About</a></li>
+                    <li class="nav__item"><a href="#tech-stack">Tech Stack</a></li>
+                    <li class="nav__item"><a href="#projects">Projects</a></li>
+                    <li class="nav__item"><a href="#contact">Contact</a></li>
                 </ul>
+
+                <div>jrgenweb&copy;2024</div>
             </div>
 
 
-        </div>
-    </nav>
+        </footer>
 
+    </main>
 
-
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <span>j</span><span>rgenweb</span>
-                </h2>
-            </div>
-            <h1>Laszlo Nemeth</h1>
-            <hr>
-            <h2>Frontend Developer</h2>
-        </div>
-
-    </header>
-    <div class="page-section portfolio" id="portfolio">
-
-        <div class="container mt-5">
-            <h4 class="text-danger text-center">In Development</h4>
-            <h2 class="text-center text-uppercase">Portfolio</h2>
-            <hr>
-
-            <div class="cards">
-                <div class="card" style="width: 18rem;">
-                    <div class="image">
-                        <img src="assets/img/projects/snake_game.webp" class="card-img-top" alt="Snake Game">
-                    </div>
-                    <div class="card-body">
-
-
-
-                        <h5 class="card-title">Snake Game</h5>
-                        <p class="card-text">Just for practice</p>
-
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://github.com/jrgenweb/snake_game" class="btn-sm btn btn-outline-secondary">View
-                            on GitHub</a>
-                        <a href="https://jrgenweb.github.io/snake_game/" class="btn btn-sm btn-secondary">Live Demo</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/projects/webtemplate_hiking_concept.webp" class="card-img-top"
-                        alt="Hiking Conceot">
-                    <div class="card-body">
-                        <h5 class="card-title">Hiking concept</h5>
-                        <p class="card-text">I created this template page with Bootstrap from free psd downloadable from
-                            freepik.com.</p>
-
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://github.com/jrgenweb/webtemplate_hiking_concept" target="_blank"
-                            class="btn-sm btn btn-outline-secondary">View on GitHub</a>
-                        <a href="https://jrgenweb.github.io/webtemplate_hiking_concept/" target="_blank"
-                            class="btn btn-sm btn-secondary">Live Demo</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/projects/szerzonorbert.webp" class="card-img-top" alt="Szerző Norbert">
-                    <div class="card-body">
-                        <h5 class="card-title">Szerző Norbert</h5>
-                        <p class="card-text">Landing page demo</p>
-
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://github.com/jrgenweb/szerzonorbert" target="_blank"
-                            class="btn-sm btn btn-outline-secondary">View on GitHub</a>
-                        <a href="https://jrgenweb.github.io/szerzonorbert/" class="btn btn-sm btn-secondary"
-                            target="_blank">Live
-                            Demo</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <h2 class="text-center text-uppercase mt-5 mb-3">Frontend Mentor Challenges</h2>
-            <hr>
-            <div class="cards">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/projects/frontend_mentor/result-summary-component.webp" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Result summary component</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of
-                            the
-                            card's content.</p>
-
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://github.com/jrgenweb/results-summary-component-main" target="_blank"
-                            class="btn-sm btn btn-outline-secondary">View on GitHub</a>
-                        <a href="https://jrgenweb.github.io/results-summary-component-main/"
-                            class="btn btn-sm btn-secondary" target="_blank">Live Demo</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/projects/frontend_mentor/recipe-page-main.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Recipe page main</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of
-                            the
-                            card's content.</p>
-
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://github.com/jrgenweb/recipe-page-main/" class="btn-sm btn btn-outline-secondary"
-                            target="_blank">View on GitHub</a>
-                        <a href="https://jrgenweb.github.io/recipe-page-main/" class="btn btn-sm btn-secondary"
-                            target="_blank">Live Demo</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/projects/frontend_mentor/blog-preview-card.webp" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Blog preview card</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of
-                            the
-                            card's content.</p>
-
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://github.com/jrgenweb/blog-preview-card-main"
-                            class="btn-sm btn btn-outline-secondary">View on GitHub</a>
-                        <a href="https://jrgenweb.github.io/blog-preview-card-main/"
-                            class="btn btn-sm btn-secondary">Live Demo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="page-section about" id="about">
-        <div class="container mt-5">
-
-            <div class="row">
-                <div class="col  text">
-                    <h2 class="text-center align-middle">Hi everyone!</h2>
-                    <p class=" align-middle">
-                        <b>Laszlo Nemeth</b> here, a passionate <b>web developer</b>. As a beginner, I am eager to learn
-                        the
-                        intricacies
-                        of web
-                        programming, and I am already excited to share my knowledge and work with others.
-                    </p>
-                </div>
-                <div class="col">
-                    <img src="assets/img/picture1.webp" alt="" class="img-fluid">
-                </div>
-            </div>
-
-            <div class="row align-bottom">
-                <div class="col">
-                    <img src="assets/img/image.webp" alt="" class="img-fluid">
-                </div>
-                <div class="col text">
-                    <h2 class="">My areas of expertise:</h2>
-                    <p class="">
-                        <b>HTML5 and CSS3:</b> I build sophisticated websites using the latest HTML5 and CSS3 standards,
-                        with a
-                        strong
-                        focus on responsive layout and modern design.
-                        <b>JavaScript:</b> I incorporate interactive elements and dynamic features into my web pages
-                        using
-                        the
-                        power
-                        of
-                        JavaScript, enhancing the user experience.
-                    </p>
-                    <p>
-                        <b>I am actively developing my skills</b> and am open to new challenges. I am happy to take on
-                        smaller
-                        projects
-                        to further expand my portfolio and gain experience.
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="row align-items-center">
-                <div class="col-6 m-auto pt-5">
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="page-section contact mt-5 " id="contact">
-
-        <div class="container">
-            <h2 class="text-uppercase mb-5">Contact Me</h2>
-            <hr class="mt-5 mb-5">
-            <!--  <p class="w-50 m-auto">
-                <b>
-                    If you are looking for a reliable and enthusiastic web developer to join your team, feel
-                    free to
-                    <a class="" href="#">contact
-                        me!</a></b>
-
-                <b>Thank you for your attention!</b>
-                <br>
-                </b>Laszlo Nemeth<b>
-            </p> -->
-
-            <div class="form col-8 m-auto">
-                <div class="form-floating mb-5">
-                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                    <label for="email">Email address</label>
-                </div>
-                <div class="form-floating mb-5">
-                    <input type="text" class="form-control" id="fullname" placeholder="Fullname">
-                    <label for="fullname">Fullname</label>
-                </div>
-                <div class="form-floating mb-5">
-                    <textarea class="form-control" rows="10" placeholder="Message" id="messageTextArea"></textarea>
-                    <label for="messageTextArea">Message</label>
-                </div>
-                <div class="col">
-                    <button class="btn btn-lg btn-primary btn-large">SEND</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <h3>
-                        Location
-                        Hungary
-                    </h3>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <h3>
-                        About on web
-                    </h3>
-                    <div class="links">
-                        <a href="#"><img src="assets/img/facebook2.png" alt=""></a>
-
-                        <a href="#">
-                            <img src="assets/img/twitter.png" alt=""></a>
-
-                        <a href="https://github.com/jrgenweb" target="_blank"><img src="assets/img/github.png"
-                                alt=""></a>
-
-                        <a href="#"><img src="assets/img/linkedin.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <h3>
-                        About me
-                    </h3>
-                    <p>
-                        "We live in the Matrix"
-                    </p>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col">
-                    jrgenweb.github.io&copy;2024
-                </div>
-            </div>
-
-
-
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
-    <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>

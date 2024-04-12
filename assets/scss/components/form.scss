@@ -1,0 +1,35 @@
+@use "../globals/variables.scss" as *;
+@use "../util/mixins.scss" as *;
+
+.form {
+    width: 50%;
+    margin: 0 auto;
+    @include respond("medium") {
+        width: 100%;
+    }
+}
+.form-control {
+    padding-bottom: 2rem;
+    width: 100%;
+    label {
+        display: block;
+    }
+    input,
+    textarea {
+        font-size: 1rem;
+        padding: 1rem;
+        border: 1px solid #dcdcdc;
+        outline: none;
+        width: inherit;
+    }
+}
+
+input,
+textarea,
+button {
+    border-radius: $br-radius-form;
+}
+
+label {
+    padding: 0.5rem 0;
+}

@@ -1,0 +1,38 @@
+:root {
+    --clr-primary: hsl(237, 25%, 35%);
+    --clr-primary-10: hsl(237, 25%, 45%);
+    --clr-secondary: #666;
+
+    --clr-white: #fff;
+    --clr-black: #000;
+
+    --clr-yellow: #eefa02;
+    --clr-blue: #20e2d7;
+}
+
+$gradient: linear-gradient(#13b0f5, #e70faa);
+
+/* animation variables */
+$transition-duration: 0.3s;
+$animation-duration: 0.3s;
+
+$button-icon-size: 20px;
+
+$br-radius-form: 0.3125rem;
+
+/* font-sizes */
+
+$fs-heading-xl: 3.5rem; // 56px
+$fs-heading-l: 3rem; // 48px
+$fs-heading-m: 1.75rem; // 28px
+
+$fs-p-default: 1rem; //16px;
+$fs-p-l: 2rem; //32px
+$fs-p-m: 1.25rem; //20px;
+$fs-p-s: 1.125rem; //18px
+
+/* font-weights */
+
+$fw-400: 400;
+$fw-600: 600;
+$fw-700: 700;

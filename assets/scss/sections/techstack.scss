@@ -1,0 +1,27 @@
+@use "../globals/typography.scss" as *;
+@use "../globals/variables.scss" as *;
+@use "../util/mixins.scss" as *;
+
+.tech-stack__icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    gap: 80px;
+    padding: 120px 0 40px 0;
+    @include respond("large") {
+        gap: 60px;
+    }
+
+    @include respond("small") {
+        justify-content: center;
+    }
+}
+
+.tech-stack__icon {
+    min-width: 50px;
+    width: 10%;
+    img {
+        width: 100%;
+    }
+}

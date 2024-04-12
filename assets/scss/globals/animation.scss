@@ -1,0 +1,112 @@
+@use "variables.scss" as *;
+@use "../util/mixins.scss" as *;
+
+/* @use "../../../node_modules/aos/src/sass/aos.scss"; */
+
+/*transitions*/
+
+/*
+
+
+navigation underline effect
+
+*/
+.nav:not(.nav--social) {
+    .nav__item {
+        a {
+            transition: text-shadow $transition-duration ease;
+            position: relative;
+            &:after {
+                content: "";
+                width: 0%;
+                position: absolute;
+                height: 2px;
+                background-color: var(--clr-primary);
+                bottom: -10px;
+                left: 50%;
+                translate: -50%;
+            }
+        }
+        a:hover::after {
+            width: 100%;
+            animation: scale $animation-duration ease;
+        }
+    }
+}
+
+.nav--social {
+    .nav__item {
+        a {
+            svg path {
+                transition: fill $transition-duration ease;
+            }
+            svg {
+                transition: scale $transition-duration ease;
+            }
+            &:hover {
+                svg {
+                    scale: 1.1;
+                }
+            }
+        }
+    }
+}
+
+.logo.text-gradient {
+    transition: background-position $transition-duration ease;
+    &:hover {
+        background-position: 0px;
+    }
+}
+
+.card {
+    transition: all $transition-duration ease !important;
+    &:hover {
+        scale: 1.02;
+    }
+}
+
+@keyframes scale {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .my-element {
+        transition: none; /* Letiltja az átmeneteket a csökkentett mozgáshoz */
+    }
+}
+
+/* mobile nav animation under medium size*/
+
+@include respond("medium") {
+    body {
+    }
+    nav {
+        .wrapper {
+            &.active {
+                animation: fadeIn $animation-duration ease;
+            }
+        }
+
+        /*      visibility: visible;
+        translate: 0;
+        .active {
+            opacity: 1;
+        } */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        translate: -100vw;
+    }
+    to {
+        opacity: 1;
+        translate: 0;
+    }
+}
