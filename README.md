@@ -1,5 +1,4 @@
-# Basic packages and file structure for creating static websites.
-
+# My portfolio page.
 ## Included packages:
 
 - PostCSS
@@ -27,9 +26,9 @@ After cloning, type the following command line commands
 ## Built With
 
 
-AOS [Link](https://michalsnik.github.io/aos/)
-Vanilla JS
-Google Fonts(Poppins, DM Sans)
-Normalize.css
-Desktop first
-Design file - [https://www.figma.com/community/file/1116246660507537002](https://www.figma.com/community/file/1116246660507537002)
+- AOS [Link](https://michalsnik.github.io/aos/)
+- Vanilla JS
+- Google Fonts(Poppins, DM Sans)
+- Normalize.css
+- Desktop first
+- Design file - [https://www.figma.com/community/file/1116246660507537002](https://www.figma.com/community/file/1116246660507537002)
