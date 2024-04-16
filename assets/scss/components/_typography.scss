@@ -1,0 +1,42 @@
+@use "../abstracts" as *;
+
+h1,
+.h1 {
+    font-size: $fs-900-fluid;
+    font-weight: $fw-700;
+    line-height: 4.375rem;
+    letter-spacing: -1px;
+    color: var(--clr-text-primary);
+}
+
+h2,
+.h2 {
+    font-size: $fs-800-fluid;
+    line-height: 1.625rem;
+    color: var(--clr-text-primary);
+}
+
+h3,
+.h3 {
+    font-size: $fs-600-fluid;
+    line-height: 26px;
+}
+
+h2,
+p {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+p {
+    color: var(--clr-secondary);
+    font-size: clamp(1.25rem, 0.9859rem + 1.1268vw, 2rem);
+    line-height: 1.625rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-primary);
+    font-size: 1.125rem;
+    font-family: "DM Sans", sans-serif;
+}

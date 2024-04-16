@@ -11,7 +11,23 @@ const navEl = document.querySelector('nav .wrapper');//top navigation
 
 navToggleEl.addEventListener('click', handleNavigation);
 
+const btnThemeSwicth = document.getElementById('themeMode');
+/**
+ * swicth light and dark theme
+ * 
+ */
+btnThemeSwicth.addEventListener('change', () => {
+    const body = document.querySelector('body');
 
+    if (btnThemeSwicth.checked) {
+        body.classList.remove('light-theme')
+        body.classList.add('dark-theme')
+    } else {
+        body.classList.add('light-theme')
+        body.classList.remove('dark-theme')
+    }
+
+})
 
 
 //add or remove class from nav element

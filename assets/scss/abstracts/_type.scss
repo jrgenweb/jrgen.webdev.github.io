@@ -1,0 +1,63 @@
+// global tokens
+$-ff-roboto: "Roboto", sans-serif;
+$-ff-merriweather: "Merriweather", serif;
+$-ff-poppins: "Poppins", sans-serif;
+$-ff-dm-sans: "DM Sans", sans-serif;
+
+// variables & utils
+$font-families: (
+  "primary": $-ff-poppins,
+  "secondary": $-ff-dm-sans
+);
+
+/* font-sizes */
+$font-sizes: (
+  "300": 1rem,
+  "400": 1.125rem,
+  "500": 1.25rem,
+  "600": 1.75rem,
+  "700": 2rem,
+  "800": 3rem,
+  "900": 3.625rem
+);
+
+$font-weights: (
+  "light": 300,
+  "regular": 400,
+  "bold": 700
+);
+
+/* 
+
+  font sizes fluid
+  later i want to create with function or mixin
+
+*/
+$fs-900-fluid: clamp(2rem, 1.4278rem + 2.4413vw, map-get($font-sizes, "900")); // 56px
+$fs-800-fluid: clamp(1.75rem, 1.3099rem + 1.8779vw, 3rem); // 48px
+$fs-700-fluid: clamp(1.25rem, 0.9859rem + 1.1268vw, 2rem); // 28px
+$fs-600-fluid: clamp(1.25rem, 1.0739rem + 0.7512vw, 1.75rem); // 28px
+$fs-500-fluid: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem); // 28px
+$fs-400-fluid: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem); // 28px
+$fs-300-fluid: 1.75rem; // 28px
+$fs-200-fluid: 1.75rem; // 28px
+$fs-100-fluid: 1.75rem; // 28px
+
+$fs-p-default: 1rem; //16px;
+$fs-p-l: 2rem; //32px
+$fs-p-m: 1.25rem; //20px;
+$fs-p-s: 1.125rem; //18px
+
+/* font-weights */
+
+$fw-400: 400;
+$fw-600: 600;
+$fw-700: 700;
+
+/* animation variables */
+$transition-duration: 0.3s;
+$animation-duration: 0.3s;
+
+$button-icon-size: 20px;
+
+$br-radius-form: 0.3125rem;

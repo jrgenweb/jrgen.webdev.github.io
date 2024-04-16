@@ -1,4 +1,6 @@
-@use "globals";
+@use "vendors";
+@use "themes";
+@use "base";
 @use "components";
-@use "sections";
-@use "util";
+@use "layouts";
+@use "utilities";

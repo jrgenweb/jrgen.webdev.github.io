@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+.tech-stack__icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    gap: 80px;
+    padding: 120px 0 40px 0;
+    @include mq("lg") {
+        gap: 60px;
+    }
+
+    @include mq("sm") {
+        justify-content: center;
+    }
+}
+
+.tech-stack__icon {
+    min-width: 50px;
+    width: 10%;
+    img {
+        width: 100%;
+    }
+}

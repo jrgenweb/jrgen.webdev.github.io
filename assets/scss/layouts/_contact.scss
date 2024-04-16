@@ -1,0 +1,15 @@
+@use "../abstracts/" as *;
+
+.contact:not(footer .contact) {
+    text-align: center;
+    padding: 20% 0;
+    h2 {
+        font-size: $fs-900-fluid;
+        line-height: 4.375rem;
+        letter-spacing: -1px;
+    }
+    a {
+        font-size: $fs-800-fluid;
+        line-height: 1.625rem;
+    }
+}

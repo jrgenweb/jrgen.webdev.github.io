@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+#projects {
+    margin-top: 200px;
+}
+.projects__content {
+    padding-top: 80px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
+    @include mq("lg") {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include mq("sm") {
+        grid-template-columns: 1fr;
+    }
+}

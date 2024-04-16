@@ -6,6 +6,7 @@
     <meta name="view-transition" content="same-origin">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my portfolio page. I'm currently learning webdevelopment.">
     <title>Laszlo Nemeth - Portfolio</title>
     <link rel="icon" type="image/x-icon" href="dist/img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +21,7 @@
     <script src="dist/js/scripts.js" defer></script>
 </head>
 
-<body>
+<body class="light-theme">
     <main>
         <nav>
             <div class="wrapper">
@@ -28,7 +29,7 @@
                     <div>{023}</div>
                     <div>jrgenweb</div>
                 </a>
-                <div class="flex">
+                <div class="flex-group">
                     <ul class="nav nav--top">
                         <li class="nav__item"><a href="#">Home</a></li>
                         <li class="nav__item"><a href="#about">About</a></li>
@@ -38,7 +39,7 @@
                     </ul>
                     <ul class="nav nav--social">
                         <li class="nav__item"><a href="https://github.com/jrgenweb" target="_blank"><span
-                                    class="visually-hidden">Github</span>
+                                    class="sr-only">Github</span>
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -47,7 +48,7 @@
                                 </svg>
                             </a></li>
                         <li class="nav__item"><a href="https://twitter.com/jrgen_webdev" target="_blank"><span
-                                    class="visually-hidden">Twitter - X</span>
+                                    class="sr-only">Twitter - X</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="30px" height="30px" viewBox="0 0 30 30" version="1.1">
 
@@ -63,8 +64,8 @@
 
                             </a></li>
                         <li class="nav__item"><a href="https://www.linkedin.com/in/jrgenweb/" target="_blank"><span
-                                    class="visually-hidden">LinkedIn</span><svg width="30" height="30"
-                                    viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    class="sr-only">LinkedIn</span><svg width="30" height="30" viewBox="0 0 30 30"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_8_50)">
                                         <path
                                             d="M15 0.599976C7.04701 0.599976 0.600006 7.04698 0.600006 15C0.600006 22.953 7.04701 29.4 15 29.4C22.953 29.4 29.4 22.953 29.4 15C29.4 7.04698 22.953 0.599976 15 0.599976ZM11.475 20.9685H8.55901V11.5845H11.475V20.9685ZM9.99901 10.4325C9.07801 10.4325 8.48251 9.77997 8.48251 8.97297C8.48251 8.14948 9.09601 7.51648 10.0365 7.51648C10.977 7.51648 11.553 8.14948 11.571 8.97297C11.571 9.77997 10.977 10.4325 9.99901 10.4325ZM22.125 20.9685H19.209V15.768C19.209 14.5575 18.786 13.7355 17.7315 13.7355C16.926 13.7355 16.4475 14.292 16.236 14.8275C16.158 15.018 16.1385 15.288 16.1385 15.5565V20.967H13.221V14.577C13.221 13.4055 13.1835 12.426 13.1445 11.583H15.678L15.8115 12.8865H15.87C16.254 12.2745 17.1945 11.3715 18.768 11.3715C20.6865 11.3715 22.125 12.657 22.125 15.42V20.9685Z"
@@ -80,10 +81,14 @@
 
                     </ul>
                 </div>
+                <label class="switch">
+                    <input type="checkbox" id="themeMode">
+                    <span class="slider round"></span>
+                </label>
             </div>
 
             <a href="#">
-                <!-- <span class="visually-hidden">Navbar Toggle</span> -->
+                <!-- <span class="sr-only">Navbar Toggle</span> -->
                 <div class="nav-toggle">
                     <div class="nav-toggle__line"></div>
                     <div class="nav-toggle__line"></div>
@@ -103,7 +108,7 @@
                 </div>
             </div>
         </header>
-        <section id="tech-stack" data-aos="fade-up">
+        <section id="tech-stack flex-group" data-aos="fade-up">
             <h2>My Tech Stack</h2>
             <p>Technologies I am currently learning</p>
 
@@ -142,7 +147,7 @@
             <h2>Projects</h2>
             <p>Things I've built so far</p>
 
-            <div class="projects__content">
+            <div class="projects__content flex-group">
 
             </div>
         </section>
@@ -160,11 +165,11 @@
         </section>
         <section id="contact" class="contact" data-aos="fade-up">
 
-            <h2>For any questions please mail us:</h2>
-            <p class="text-gradient">jrgenweb@gmail.com</p>
+            <h2>For any questions please mail me:</h2>
+            <a class="text-gradient" href="mailto:jrgenweb@gmail.com">jrgenweb@gmail.com</a>
 
-            <p>Or Message Me:</p>
 
+            <!-- 
             <div class="form">
                 <form action="mailto:jrgenweb@gmail.com">
 
@@ -183,23 +188,23 @@
                     </div>
                     <button type="submit">Send</button>
                 </form>
-            </div>
+            </div> -->
         </section>
 
 
         <footer class="footer">
 
-            <div class="footer__top">
+            <div class="footer__top flex-group">
                 <a href="#" class="logo">
                     <div>{023}</div>
                     <div>jrgenweb</div>
                 </a>
                 <div class="contact">
-                    <a href="tel:+36 70 279 0611">+36 70 279 0611</a>
+                    <a href="tel:+36702790611">+36 70 279 0611</a>
                     <a href="mailto:jrgenweb@gmail.com">jrgenweb@gmail.com</a>
                     <ul class="nav nav--social">
                         <li class="nav__item"><a href="https://github.com/jrgenweb" target="_blank"><span
-                                    class="visually-hidden">Github</span>
+                                    class="sr-only">Github</span>
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -208,7 +213,7 @@
                                 </svg>
                             </a></li>
                         <li class="nav__item"><a href="https://twitter.com/jrgen_webdev" target="_blank"><span
-                                    class="visually-hidden">Twitter - X</span>
+                                    class="sr-only">Twitter - X</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="30px" height="30px" viewBox="0 0 30 30" version="1.1">
 
@@ -224,8 +229,8 @@
 
                             </a></li>
                         <li class="nav__item"><a href="https://www.linkedin.com/in/jrgenweb/" target="_blank"><span
-                                    class="visually-hidden">LinkedIn</span><svg width="30" height="30"
-                                    viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    class="sr-only">LinkedIn</span><svg width="30" height="30" viewBox="0 0 30 30"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_8_50)">
                                         <path
                                             d="M15 0.599976C7.04701 0.599976 0.600006 7.04698 0.600006 15C0.600006 22.953 7.04701 29.4 15 29.4C22.953 29.4 29.4 22.953 29.4 15C29.4 7.04698 22.953 0.599976 15 0.599976ZM11.475 20.9685H8.55901V11.5845H11.475V20.9685ZM9.99901 10.4325C9.07801 10.4325 8.48251 9.77997 8.48251 8.97297C8.48251 8.14948 9.09601 7.51648 10.0365 7.51648C10.977 7.51648 11.553 8.14948 11.571 8.97297C11.571 9.77997 10.977 10.4325 9.99901 10.4325ZM22.125 20.9685H19.209V15.768C19.209 14.5575 18.786 13.7355 17.7315 13.7355C16.926 13.7355 16.4475 14.292 16.236 14.8275C16.158 15.018 16.1385 15.288 16.1385 15.5565V20.967H13.221V14.577C13.221 13.4055 13.1835 12.426 13.1445 11.583H15.678L15.8115 12.8865H15.87C16.254 12.2745 17.1945 11.3715 18.768 11.3715C20.6865 11.3715 22.125 12.657 22.125 15.42V20.9685Z"
@@ -244,7 +249,7 @@
 
             </div>
 
-            <div class="footer__bottom">
+            <div class="footer__bottom flex-group">
                 <ul class="nav nav--bottom">
                     <li class="nav__item"><a href="#">Home</a></li>
                     <li class="nav__item"><a href="#about">About</a></li>

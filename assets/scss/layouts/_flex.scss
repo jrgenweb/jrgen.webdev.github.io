@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+.flex-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@include mq("md") {
+  .flex-group:has(.nav--top) {
+    flex-direction: column;
+  }
+}

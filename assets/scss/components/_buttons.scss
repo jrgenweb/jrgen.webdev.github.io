@@ -1,0 +1,50 @@
+@use "../abstracts" as *;
+
+.btn-link {
+    font-size: 1rem;
+    color: var(--clr-text-primary);
+    text-decoration: underline;
+    position: relative;
+    display: flex;
+    align-items: center;
+    &::before {
+        content: "";
+        background-size: $button-icon-size $button-icon-size;
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin-right: 10px;
+        width: $button-icon-size;
+        height: $button-icon-size;
+        /* s */
+    }
+}
+
+.link--preview::before {
+    background-image: url("../img/anchor.svg");
+}
+
+.link--code::before {
+    background-image: url("../img/github.svg");
+}
+
+.dark-theme {
+    .link--preview::before {
+        background-image: url("../img/anchor_white.svg");
+    }
+
+    .link--code::before {
+        background-image: url("../img/github_white.svg");
+    }
+}
+
+button {
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    border: 0;
+    &:hover {
+        background-color: var(--clr-primary-10);
+    }
+}

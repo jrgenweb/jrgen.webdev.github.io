@@ -1,0 +1,35 @@
+/* color variables */
+$clr-primary: hsl(237, 25%, 35%);
+$clr-primary-lighten: hsl(237, 25%, 45%);
+$clr-secondary: #666;
+$clr-white: #fff;
+$clr-black: #191919;
+
+$clr-gray: #cccccc;
+
+$clr-yellow: #eefa02;
+$clr-cyan: #20e2d7;
+
+$gradient: linear-gradient(#13b0f5, #e70faa);
+
+@mixin light-theme {
+  --clr-bg-primary: #{$clr-white};
+  --clr-text-primary: #{$clr-primary};
+  --clr-text-secondary: #{$clr-secondary};
+  --clr-card-bg: #{$clr-white};
+  --clr-cyan: #{$clr-cyan};
+  --clr-yellow: #{$clr-yellow};
+  --clr-white: #{$clr-white};
+  --clr-black: #{$clr-black};
+}
+
+@mixin dark-theme {
+  --clr-bg-primary: #121212;
+  --clr-text-primary: #{$clr-gray};
+  --clr-text-secondary: #{$clr-secondary};
+  --clr-card-bg: #363636;
+  --clr-cyan: #{$clr-cyan};
+  --clr-yellow: #{$clr-yellow};
+  --clr-white: #{$clr-white};
+  --clr-black: #{$clr-black};
+}
