@@ -11,23 +11,94 @@ const navEl = document.querySelector('nav .wrapper');//top navigation
 
 navToggleEl.addEventListener('click', handleNavigation);
 
-const btnThemeSwicth = document.getElementById('themeMode');
+
 /**
  * swicth light and dark theme
+ * detect the defalt scheme
  * 
  */
-btnThemeSwicth.addEventListener('change', () => {
-    const body = document.querySelector('body');
+const btnThemeSwitch = document.getElementById('themeMode');
+const body = document.querySelector('body');
 
-    if (btnThemeSwicth.checked) {
-        body.classList.remove('light-theme')
-        body.classList.add('dark-theme')
+
+
+/** */
+btnThemeSwitch.addEventListener('change', () => {
+    console.log('Change');
+
+    if (btnThemeSwitch.checked) {
+
+        //set to dark
+        body.classList.remove('light-theme');
+        body.classList.add('dark-theme');
+
+
+        console.log('dark');
+
+
     } else {
-        body.classList.add('light-theme')
-        body.classList.remove('dark-theme')
-    }
+        //set to light
+        body.classList.add('light-theme');
+        body.classList.remove('dark-theme');
 
+        console.log('light');
+    }
 })
+/**
+ * 
+ * @param {*} scheme 
+ * add class to body 
+ * 
+ * 
+ */
+function setColorScheme(scheme) {
+    switch (scheme) {
+        case 'dark':
+            body.classList.remove('light-theme');
+            body.classList.add('dark-theme');
+            btnThemeSwitch.checked = true;
+            console.log('dark');
+            //Dark
+            break;
+        case 'light':
+            body.classList.add('light-theme');
+            body.classList.remove('dark-theme');
+            btnThemeSwitch.checked = false;
+            console.log('light');
+            // Light
+            break;
+        default:
+            // Default
+            console.log('light');
+            break;
+    }
+}
+
+function setSwicth(scheme) {
+
+}
+function getPreferredColorScheme() {
+    if (window.matchMedia) {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark';
+        } else {
+            return 'light';
+        }
+    }
+    return 'light';
+}
+
+function updateColorScheme() {
+    setColorScheme(getPreferredColorScheme());
+}
+/** if change the color scheme */
+if (window.matchMedia) {
+    var colorSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    colorSchemeQuery.addEventListener('change', updateColorScheme);
+}
+
+updateColorScheme();
+
 
 
 //add or remove class from nav element
@@ -69,14 +140,14 @@ async function loadProjects() {
 </div> */
 
 
-
+/** render cards */
 function renderCard(data) {
     data.forEach(element => {
         projectsContentEl.appendChild(
             createCard(element));
     });
 }
-
+/**create card element */
 function createCard(item) {
 
     const cardEl = document.createElement('div');
