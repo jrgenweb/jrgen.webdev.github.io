@@ -23,15 +23,15 @@
 
 <body class="light-theme">
     <main>
-        <nav>
+        <nav id="home">
             <div class="wrapper">
-                <a href="#" class="logo text-gradient">
+                <a href="#home" class="logo text-gradient" aria-label="Logo">
                     <div>{023}</div>
                     <div>jrgenweb</div>
                 </a>
                 <div class="flex-group">
                     <ul class="nav nav--top">
-                        <li class="nav__item"><a href="#">Home</a></li>
+                        <li class="nav__item"><a href="#home">Home</a></li>
                         <li class="nav__item"><a href="#about">About</a></li>
                         <li class="nav__item"><a href="#tech-stack">Tech Stack</a></li>
                         <li class="nav__item"><a href="#projects">Projects</a></li>
@@ -82,13 +82,14 @@
                     </ul>
                 </div>
                 <label class="switch">
+                    <span class="sr-only">Dark mode - switch</span>
                     <input type="checkbox" id="themeMode">
                     <span class="slider round"></span>
                 </label>
             </div>
 
-            <a href="#">
-                <!-- <span class="sr-only">Navbar Toggle</span> -->
+            <a href="#home">
+                <span class="sr-only">Navbar Toggle</span>
                 <div class="nav-toggle">
                     <div class="nav-toggle__line"></div>
                     <div class="nav-toggle__line"></div>
@@ -104,7 +105,7 @@
             </div>
             <div class="header__image">
                 <div class="image__bg">
-                    <img src="dist/img/profile.webp" alt="Profile">
+                    <img src="dist/img/profile.webp" alt="Profile Picture" width="330" height="330">
                 </div>
             </div>
         </header>
@@ -196,6 +197,7 @@
 
             <div class="footer__top flex-group">
                 <a href="#" class="logo">
+                    <span class="sr-only">Logo</span>
                     <div>{023}</div>
                     <div>jrgenweb</div>
                 </a>
@@ -251,7 +253,7 @@
 
             <div class="footer__bottom flex-group">
                 <ul class="nav nav--bottom">
-                    <li class="nav__item"><a href="#">Home</a></li>
+                    <li class="nav__item"><a href="#home">Home</a></li>
                     <li class="nav__item"><a href="#about">About</a></li>
                     <li class="nav__item"><a href="#tech-stack">Tech Stack</a></li>
                     <li class="nav__item"><a href="#projects">Projects</a></li>

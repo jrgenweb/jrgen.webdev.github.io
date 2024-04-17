@@ -44,7 +44,8 @@ button {
     background-color: var(--clr-primary);
     color: var(--clr-white);
     border: 0;
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: var(--clr-primary-10);
     }
 }

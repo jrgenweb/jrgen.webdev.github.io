@@ -76,7 +76,7 @@
     },
     {
         "title": "Time tracking dashboard",
-        "img_url": "https://jrgenweb.github.io/time-tracking-dashboard-main/screenshot.png",
+        "img_url": "https://jrgenweb.github.io/time-tracking-dashboard-main/screenshot-mobile.webp",
         "description": "description",
         "tags": [
             "HTML5",
@@ -92,7 +92,7 @@
     },
     {
         "title": "Newsletter sign-up form",
-        "img_url": "https://jrgenweb.github.io/newsletter-sign-up-with-success-message-main/screenshot.png",
+        "img_url": "https://jrgenweb.github.io/newsletter-sign-up-with-success-message-main/screenshot.webp",
         "description": "description",
         "tags": [
             "HTML5",
