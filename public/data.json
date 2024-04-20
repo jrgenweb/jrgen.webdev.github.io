@@ -1,4 +1,20 @@
 [
+     {
+        "title": "Tip calculator App",
+        "img_url": "screenshot.webp",
+        "description": "description",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "SCSS",
+            "JS"
+        ],
+        "urls": {
+            "live": "https://jrgenweb.github.io/tip-calculator-app-main",
+            "code": "https://github.com/jrgenweb/tip-calculator-app-main"
+        },
+        "category": "Other"
+    },
     {
         "title": "Norbert Szerzo Landing page",
         "img_url": "szerzonorbert.webp",
