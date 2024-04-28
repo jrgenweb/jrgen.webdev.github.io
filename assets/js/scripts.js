@@ -240,3 +240,18 @@ function createCard(item) {
 }
 
 loadProjects();
+
+/** scroll to top  */
+
+const scrollToTopEl = document.querySelector(".scroll-to-top");
+const headerEl = document.querySelector(".header");
+window.onscroll = function () {
+  if (
+    document.body.scrollTop > headerEl.clientHeight ||
+    document.documentElement.scrollTop > headerEl.clientHeight
+  ) {
+    scrollToTopEl.classList.add("active");
+  } else {
+    scrollToTopEl.classList.remove("active");
+  }
+};

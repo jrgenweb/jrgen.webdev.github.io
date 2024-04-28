@@ -68,3 +68,21 @@ button {
             0 0 0.65px var(--clr-text-primary);
     }
 }
+
+.scroll-to-top {
+    position: fixed;
+    background-color: var(--clr-bg-primary);
+    bottom: 1rem;
+    border-radius: 50%;
+    right: 1rem;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid var(--clr-text-primary);
+    opacity: 0;
+    svg path {
+        fill: var(--clr-text-primary);
+    }
+}
+
+.scroll-to-top.active {
+    opacity: 1;
+}
