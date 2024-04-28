@@ -121,5 +121,83 @@
             "code": "https://github.com/jrgenweb/newsletter-sign-up-with-success-message-main/"
         },
         "category": "FEM"
+    },
+    {
+        "title": "Meet landing page",
+        "img_url": "https://jrgenweb.github.io/meet-landing-page/preview.jpg",
+        "description": "description",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "SCSS"
+            
+        ],
+        "urls": {
+            "live": "https://jrgenweb.github.io/meet-landing-page/",
+            "code": "https://github.com/jrgenweb/meet-landing-page/"
+        },
+        "category": "FEM"
+    },
+    {
+        "title": "Article preview component",
+        "img_url": "https://jrgenweb.github.io/article-preview-component-master/screenshot.png",
+        "description": "description",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "SCSS",
+            "JS"
+            
+        ],
+        "urls": {
+            "live": "https://jrgenweb.github.io/article-preview-component-master/",
+            "code": "https://github.com/jrgenweb/article-preview-component-master"
+        },
+        "category": "FEM"
+    },
+    {
+        "title": "Product preview card component",
+        "img_url": "https://jrgenweb.github.io/product-preview-card-component-main/screenshot.png",
+        "description": "description",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "SCSS"            
+        ],
+        "urls": {
+            "live": "https://jrgenweb.github.io/product-preview-card-component-main",
+            "code": "https://github.com/jrgenweb/product-preview-card-component-main"
+        },
+        "category": "FEM"
+    },
+    {
+        "title": "Four card feature component",
+        "img_url": "https://jrgenweb.github.io/four-card-feature-section-master/screenshot.png",
+        "description": "description",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "SCSS"            
+        ],
+        "urls": {
+            "live": "https://jrgenweb.github.io/four-card-feature-section-master/",
+            "code": "https://github.com/jrgenweb/four-card-feature-section-master/"
+        },
+        "category": "FEM"
+    },
+    {
+        "title": "Testimonials grid section",
+        "img_url": "https://jrgenweb.github.io/testimonials-grid-section-main/screenshot.png",
+        "description": "description",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "SCSS"            
+        ],
+        "urls": {
+            "live": "https://jrgenweb.github.io/testimonials-grid-section-main/",
+            "code": "https://github.com/jrgenweb/testimonials-grid-section-main"
+        },
+        "category": "FEM"
     }
 ]

@@ -33,6 +33,27 @@ navigation underline effect
     }
 }
 
+.btn-load-more {
+    transition: text-shadow $transition-duration ease;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 0%;
+        position: absolute;
+        height: 2px;
+        background-color: var(--clr-text-primary);
+        bottom: -10px;
+        left: 50%;
+        translate: -50%;
+    }
+
+    &:hover::after {
+        width: 100%;
+        animation: scale $animation-duration ease;
+    }
+}
 .nav--social {
     .nav__item {
         a {

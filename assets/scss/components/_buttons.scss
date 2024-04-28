@@ -49,3 +49,22 @@ button {
         background-color: var(--clr-primary-10);
     }
 }
+
+.btn-load-more {
+    width: fit-content;
+    align-self: center;
+    display: block;
+    padding-top: 3rem;
+    margin: 0 auto;
+
+    color: var(--clr-text-primary);
+    line-height: 1.625rem;
+    font-family: "DM Sans", sans-serif;
+
+    &:hover {
+        color: var(--clr-text-primary);
+        text-shadow:
+            0 0 0.65px var(--clr-text-primary),
+            0 0 0.65px var(--clr-text-primary);
+    }
+}
