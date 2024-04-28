@@ -1,20 +1,27 @@
 @use "../abstracts/" as *;
 nav {
+    display: flex;
+    justify-content: space-between;
     .wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2rem 0;
+        padding: 1rem 0;
         background-color: var(--clr-bg-primary);
+        .flex-group {
+            .nav,
+            .flex-group {
+            }
+        }
     }
     .nav__toggle {
         visibility: hidden;
     }
 
     .switch {
-        position: absolute;
+        /* position: absolute;
         right: 1rem;
-        top: 0.5rem;
+        top: 0.5rem; */
     }
 }
 
@@ -45,7 +52,10 @@ nav {
     &--social {
         gap: 1rem;
         padding-right: 0;
+
         a {
+            display: flex;
+
             &:hover {
                 svg path {
                     fill: var(--clr-text-primary);
@@ -55,6 +65,7 @@ nav {
     }
     /* Top navigation styles */
     &--top {
+        padding: 1rem 2rem;
         a {
             font-size: 1.25rem;
         }
@@ -85,11 +96,7 @@ nav {
             flex-direction: column;
         }
         .wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-columns: auto;
-            text-align: left;
-            width: 100vw;
+            width: 100%;
             position: absolute;
 
             top: 0;
@@ -108,25 +115,19 @@ nav {
         .logo {
             font-size: 1.75rem;
         }
-        .switch {
-            grid-row: 2/3;
-            grid-column: 2/3;
-            margin-block-start: auto;
-            right: auto;
-            top: auto;
-            position: relative;
-        }
-        .flex-group {
-            padding-top: 2rem;
 
-            grid-row: 2/3;
+        .flex-group {
+            padding-top: 4rem;
+            width: calc(100vw - 4rem);
+
+            align-items: flex-start;
+            gap: 0rem;
             .nav {
-                padding-left: 0;
+                padding: 0;
             }
             .nav:not(.nav--social) {
                 flex-direction: column;
                 align-items: flex-start;
-                padding-bottom: 2rem;
             }
         }
 
