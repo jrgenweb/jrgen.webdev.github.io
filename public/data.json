@@ -199,5 +199,50 @@
             "code": "https://github.com/jrgenweb/testimonials-grid-section-main"
         },
         "category": "FEM"
+    },
+    {
+        "title": "Frontend quiz app",
+        "img_url": "https://github.com/jrgenweb/frontend-quiz-app/preview.jpg",
+        "description": "description",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "VUEJS"            
+        ],
+        "urls": {
+            "live": "https://frontend-quiz-app-ruddy.vercel.app/",
+            "code": "https://github.com/jrgenweb/frontend-quiz-app"
+        },
+        "category": "FEM"
+    },
+    {
+        "title": "Age calculator app",
+        "img_url": "https://jrgenweb.github.io/age-calculator-app-main/screenshot.webp",
+        "description": "description",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "JS"            
+        ],
+        "urls": {
+            "live": "https://jrgenweb.github.io/age-calculator-app-main",
+            "code": "https://github.com/jrgenweb/age-calculator-app-main"
+        },
+        "category": "FEM"
+    },
+    {
+        "title": "Skilled e-learning landing page",
+        "img_url": "https://jrgenweb.github.io/skilled-elearning-landing-page/preview.jpg",
+        "description": "description",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "JS"            
+        ],
+        "urls": {
+            "live": "https://jrgenweb.github.io/skilled-elearning-landing-page",
+            "code": "https://jrgenweb.github.io/skilled-elearning-landing-page"
+        },
+        "category": "FEM"
     }
 ]
