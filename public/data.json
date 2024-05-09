@@ -244,5 +244,35 @@
             "code": "https://jrgenweb.github.io/skilled-elearning-landing-page"
         },
         "category": "FEM"
+    },
+    {
+        "title": "Age calculator",
+        "img_url": "https://jrgenweb.github.io/age-calculator-app-main/screenshot.webp",
+        "description": "description",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "JS"            
+        ],
+        "urls": {
+            "live": "https://jrgenweb.github.io/age-calculator-app-main",
+            "code": "https://github.com/jrgenweb/age-calculator-app-main"
+        },
+        "category": "FEM"
+    },
+    {
+        "title": "Hangman game",
+        "img_url": "https://github.com/jrgenweb/hangman-game/blob/master/preview.jpg?raw=true",
+        "description": "description",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "VUEJS"            
+        ],
+        "urls": {
+            "live": "https://hangman-game-alpha-two.vercel.app/",
+            "code": "https://github.com/jrgenweb/hangman-game"
+        },
+        "category": "FEM"
     }
 ]

@@ -24,7 +24,7 @@
             object-fit: cover;
             object-position: right;
 
-            filter: grayscale(1);
+            /* filter: grayscale(1); */
         }
     }
     @include mq("md") {
