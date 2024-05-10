@@ -91,6 +91,7 @@ updateColorScheme();
 //add or remove class from nav element
 function handleNavigation() {
   navEl.classList.toggle("active");
+  navToggleEl.classList.toggle("active");
 }
 
 //load projects from data.json
